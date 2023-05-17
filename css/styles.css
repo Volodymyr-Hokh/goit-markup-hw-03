@@ -36,6 +36,7 @@ button {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
 }
 
 body {
@@ -59,11 +60,13 @@ body {
   list-style: none;
 }
 
+.header {
+  border: none;
+}
+
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .navigation {
@@ -81,11 +84,17 @@ body {
   align-items: center;
 }
 
+.menu-item {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
 .menu-item:not(:last-child) {
   margin-right: 40px;
 }
 
 .logo {
+  display: block;
   margin-right: 76px;
 }
 
@@ -150,6 +159,10 @@ body {
   padding-bottom: 120px;
 }
 
+.gallery-section {
+  padding-bottom: 120px;
+}
+
 .hero {
   background-color: var(--primary-color);
   padding-top: 188px;
@@ -188,6 +201,8 @@ body {
   gap: 10px;
   margin-left: auto;
   margin-right: auto;
+  border: none;
+  border-radius: 4px;
 }
 
 .order-button:hover,
@@ -252,13 +267,18 @@ body {
   gap: 24px;
 }
 
+.worker-info {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
 .worker-full-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-color);
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -268,8 +288,8 @@ body {
   letter-spacing: 0.02em;
 }
 
-.workers {
-  background-color: #ffffff;
+.worker {
+  background-color: var(--default-bg);
 }
 
 .filter-button {
@@ -299,7 +319,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 24px;
-  margin-top: 24px;
   margin-bottom: 72px;
 }
 
@@ -321,11 +340,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-color);
-  margin-top: 32px;
-  margin-bottom: 8px;
-}
-.portfolio-list-item {
-  border-bottom: 1px solid #e7e9fc;
+  /* margin-bottom: 8px; */
 }
 
 .portfolio-item-category {
@@ -333,6 +348,15 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 32px;
+}
+
+.portfolio-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
 
 .footer {
